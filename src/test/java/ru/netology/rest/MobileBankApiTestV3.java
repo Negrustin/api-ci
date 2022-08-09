@@ -22,7 +22,7 @@ class MobileBankApiTestV3 {
           .contentType(ContentType.JSON)
           .header("Content-Type", "application/json; charset=UTF-8")
           .body("", hasSize(3))
-          .body("[0].currency", oneOf("RUB","USD"))
+          .body("[0].currency", oneOf("RUR","USD"))
           .body("[1].currency", oneOf("RUB","USD"))
           .body("[2].currency", oneOf("RUB","USD"))
 
