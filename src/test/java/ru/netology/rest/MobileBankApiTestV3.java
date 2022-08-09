@@ -18,7 +18,6 @@ class MobileBankApiTestV3 {
 
       .then()
           .statusCode(200)
-          // специализированные проверки - лучше
           .contentType(ContentType.JSON)
           .header("Content-Type", "application/json; charset=UTF-8")
           .body("", hasSize(3))
